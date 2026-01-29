@@ -1,0 +1,25 @@
+{
+  "name": "@keon/workspace",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Keon TypeScript SDK - Workspace root",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "pnpm --filter '@keon/*' run build",
+    "test": "pnpm --filter '@keon/*' run test",
+    "lint": "pnpm --filter '@keon/*' run lint",
+    "clean": "pnpm --filter '@keon/*' run clean"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "typescript": "^5.3.3",
+    "vitest": "^1.2.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "packageManager": "pnpm@8.15.0"
+}
